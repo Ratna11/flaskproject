@@ -1,0 +1,25 @@
+</p>
+<html>
+  <head>
+    <title>Product page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Productname" name="productname" value="{{
+          request.form.productnamename }}">
+         
+        <input class="btn btn-default" type="submit" value="Create">
+
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+    <input class="btn btn-default" type="submit" value="Show Product">
+  </body>
+</html>
